@@ -19,7 +19,7 @@ describe "my_select" do
 
   it "selects the items in the collection to which the block returns true" do
     expect(my_select(nums) do |num|
-      num.even?
+      .even?num
     end).to eq([2, 4])
   end
 
